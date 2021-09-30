@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@300&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style/styles.css" />
+  <title>Todo juego</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <img src="./img/logo.png" alt="logo" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active external" href="./juego/juego.html">Vamos a jugar !!</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!------------------Titulo de la pagina principal----------------------->
+  <div class="titlePagina">
+    <h1>Solo Juegos</h1>
+  </div>
+
+  <!---Seccion de informacion sobre que son los juegos de mesa----------->
+
+  <section id="Informacion">
+    <div class="infoJuego">
+      <h2>Juegos de Mesa</h2>
+      <p>Los Juego de mesa es la clasificación que se da a los juegos que constan de un tablero y fichas de diferentes
+        formas
+        y colores, lo que obliga a que se organice sobre una superficie plana, generalmente una mesa, de ahí su nombre.
+        Según las reglas, que son diferentes para cada juego, pueden participar en ellos una o más personas.</p>
+
+      <p>Mientras unos juegos requieren de los participantes el uso del razonamiento táctico o estratégico,
+        coordinación, destreza manual, memoria, capacidad deductiva, u otras habilidades, otros juegos simplemente están
+        basados en el puro azar.</p>
+
+      <p>Por su naturaleza, los juegos de mesa no conllevan en general actividad física, aunque existen algunos que
+        implican levantarse de la mesa y realizar actividades fuera de esta.</p>
+      </p>
+    </div>
+  </section>
+
+  <!---Seccion que muestra los juegos de mesa mas populares de la historia----------->
+
+  <section class="juegosPopulares">
+    <h2>Los 8 juegos de mesa más famosos de todos los tiempos</h2>
+    <div class="container">
+      <button class="btn btn-container btn-dark" onclick="obtener()">Mostrar juegos</button>
+      <div class="tabla-info encabezado" style="display: none;">
+        <table class="table table-hover table-dark">
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Juegos</th>
+              <th scope="col">Jugadores</th>
+              <th scope="col">Clasificacion</th>
+            </tr>
+          </thead>
+          <tbody id="contenido">
+            <tr>
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!---Seccion que muestra los juegos de mesa disponibles para jugar----------->
+
+  <section class="juegosDisponibles">
+    <h2>Juegos disponibles</h2>
+    <div class="juedosDisponibles-card"> </div>
+  </section>
+
+  <!---Seccion que muestra el footer------------------------->
+
+  <footer class="blockFooter row">
+    <div class="col-md-6">
+      <h4>Solo Juegos:</h4>
+      <p>Solo Juegos © Copyright 2021</p>
+    </div>
+    <div class="blockFooter_socialMedia col-md-6">
+      <h4>Follow us:</h4>
+      <button type="button" class="btn btn-light"><a href="https://twitter.com/"><img src="./img/twitter.png"
+            alt="twitter"></button>
+      <button type="button" class="btn btn-light"><a href="https://instagram.com/"><img src="./img/instagram.png"
+            alt="instagram"></button>
+      <button type="button" class="btn btn-light"><a href="https://www.twitch.tv/"><img src="./img/twich.png"
+            alt="twitch"></button>
+      <button type="button" class="btn btn-light"><a href="https://www.facebook.com/"><img src="./img/facebook.png"
+            alt="facebook"></button>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

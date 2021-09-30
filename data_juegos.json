@@ -1,0 +1,56 @@
+[{
+    "id": 1,
+    "nombre": "Ajedrez",
+    "jugadores": "Individual",
+    "clasificacion": "Deporte Mental"
+    
+  },
+{
+    "id": 2,
+    "nombre": "Cartas",
+    "jugadores": "4 en equipos de 2",
+    "clasificacion": "Juego de naipes"
+    
+  },
+{
+    "id": 3,
+    "nombre": "Monopoly",
+    "jugadores": "2-8 Jugadores",
+    "clasificacion": "Juego de azar"
+    
+  },
+{
+    "id": 4,
+    "nombre": "Dominó",
+    "jugadores": "4 en equipos de 2",
+    "clasificacion": "Juego de fichas"
+    
+  },
+{
+    "id": 5,
+    "nombre": "Rompecabezas",
+    "jugadores": "Individual",
+    "clasificacion": "Juego de mesa"
+    
+  },
+{
+    "id": 6,
+    "nombre": "Backgammon",
+    "jugadores": " 2 Jugadores",
+    "clasificacion": "Juego de azar"
+    
+  },
+{
+    "id": 7,
+    "nombre": "Damas",
+    "jugadores": " 2 Jugadores",
+    "clasificacion": "Táctica, estrategia."
+    
+  },
+  {
+    "id": 8,
+    "nombre": "Ludo",
+    "jugadores": "2 a 4 jugadores",
+    "clasificacion": "Juego de azar"
+   
+  }]

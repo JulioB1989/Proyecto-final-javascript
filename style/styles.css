@@ -1,0 +1,239 @@
+/*---------------------Estilos Generales-------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 15px 30px 15px 30px;
+}
+
+body {
+  background-color: white;
+  font-family: "Gluten", cursive;
+  text-align: center;
+  overflow-x: hidden;
+
+}
+
+/*----------------Estilos del nav--------------------------------*/
+
+nav div{
+  padding: 15px;
+}
+
+nav img {
+  height: 80px;
+  width: 90px;
+  
+}
+
+.nav-item a {
+
+  font-size: 25px;
+  
+}
+
+
+/*----------------Estilos del titulo--------------------------------*/
+
+.titlePagina {
+  background-image: url(../img/back_table.jpg);
+  background-size: cover;
+  height: 300px;
+}
+
+h1 {
+  padding-top: 190px;
+  padding-left: 15px;
+  text-align: left;
+  color: rgb(57, 107, 28);
+  font-weight: bold;
+  font-size: 80px;
+  text-shadow: rgb(232, 246, 248) 10px 6px 6px;
+
+}
+
+h2 {
+  color: darkslategray;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-style: oblique;
+  text-align: center;
+  padding: 10px;
+}
+
+h3 {
+
+  font-size: 18px;
+  text-decoration: underline;
+  
+}
+
+
+/*----------------Estilos del contenido-------------------------------*/
+
+.juedosDisponibles-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.tabla-info {
+  padding: 30px;
+}
+
+.reglas-listas {
+  background-color: white;
+  list-style: inside;
+  font-size: 18px;
+
+}
+
+.reglas-listas li {
+
+  padding: 10px;
+  font-weight: bold;
+}
+
+.list-group li {
+
+  background-color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+
+}
+
+
+/*----------------Estilos del juego--------------------------------*/
+
+.dices {
+  height: 130px;
+  width: 130px;
+}
+
+#fichasDeJuego {
+  justify-content: center;
+}
+
+.board-game {
+  width: 600px;
+  height: 600px;
+}
+
+.red {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: red;
+  width: 35px;
+  height: 35px;
+  border: 3px solid #0a0202;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+}
+
+.blue {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: blue;
+  width: 35px;
+  height: 35px;
+  border: 3px solid #0a0202;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+}
+
+.green {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(19, 209, 19);
+  width: 35px;
+  height: 35px;
+  border: 3px solid #0a0202;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+}
+
+.yellow {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: yellow;
+  width: 35px;
+  height: 35px;
+  border: 3px solid #0a0202;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+}
+
+.dados {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.dados li {
+  font-size: 12px;
+  text-transform: capitalize;
+  font-style: oblique;
+  list-style: square;
+  padding: 3px;
+}
+
+.dados p {
+  font-weight: bold;
+}
+
+#uno,
+#dos,
+#tres,
+#cuatro,
+#cinco,
+#seis {
+  display: none;
+  height: 250px;
+  width: 250px;
+ 
+}
+
+/*----------------Estilos del ganador--------------------------------*/
+
+.win {
+  display: none;
+  height: 650px;
+  width: 700px;
+}
+
+#ganador {
+  padding-bottom: 30px;
+}
+
+
+/*----------------Estilos delfooter--------------------------------*/
+
+.blockFooter {
+  padding: 15px;
+  align-items: center;
+  background-color: #212529;
+  color: #e6f4f5;
+}
+
+.blockFooter_copyright p {
+  text-decoration: underline;
+  font-style: oblique;
+  font-size: 18px;
+}
+
+.blockFooter_socialMedia img {
+  width: 30px;
+  height: 30px;
+}
+
+.blockFooter_socialMedia button:hover {
+  background-color: #29ec0f;
+}

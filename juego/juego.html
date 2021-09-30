@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@300&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../style/styles.css" />
+  <title>Ludo</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <img src="../img/logo.png" alt="logo" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Página principal</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!------------------Titulo de la pagina principal----------------------->
+
+  <div class="titlePagina">
+    <h1>A jugar</h1>
+  </div>
+
+  <!------Seccion del juego donde escogemos o marcamos el color a jugar-------->
+
+  <section class="seleccion">
+    <div class="seleccion-color">
+      <h2>Juega al Ludo!!</h2>
+      <button class="reglas btn btn-dark">¿Como Jugar?</button>
+      <div class="reglas-listas"></div>
+      <h2>Colores Seleccionados:</h2>
+      <form>
+        <input type="checkbox" value="Rojo" name="colores" id="color1" class="valores" /><label for="">Rojo</label>
+        <input type="checkbox" value="Verde" name="colores" id="color2" class="valores" /><label for="">Verde</label>
+        <input type="checkbox" value="Amarillo" name="colores" id="color3" class="valores" /><label
+          for="">Amarillo</label>
+        <input type="checkbox" value="Azul" name="colores" id="color4" class="valores" /><label for="">Azul</label>
+        <button type="button" id="boton" class="btn btn-dark">Ver colores</button>
+      </form>
+      <ul id="lista" class="list-group"></ul>
+    </div>
+  </section>
+
+  <!------------Seccion de movimiento del dado y las fichas sobre el tablero------------>
+
+  <section id="fichasDeJuego" class="row">
+    <div id="container-dados" class="col-md-5">
+      <div>
+        <h3>Presiona y juega</h3>
+        <p>Nota: arrastra las fichas con el mouse y muevelas por el tablero</p>
+        <button type="button" id="botonDados">
+          <img class="dices" src="../img/dice.gif" alt="dice" />
+        </button>
+        
+      </div>
+      <div class="dados">
+        <img src="../img/1.jpg" alt="Dado 1" id="uno" />
+        <img src="../img/2.jpg" alt="Dado 2" id="dos" />
+        <img src="../img/3.jpg" alt="Dado 3" id="tres" />
+        <img src="../img/4.jpg" alt="Dado 4" id="cuatro" />
+        <img src="../img/5.jpg" alt="Dado 5" id="cinco" />
+        <img src="../img/6.jpg" alt="Dado 6" id="seis" />
+      </div>
+    </div>
+    <div class="col-md-6">
+      <img src="../img/tablero_ludo.png" alt="tablero" class="board-game" />
+    </div>
+    <div class="col-md-1 fichas">
+      <div id="arrastrar" class="red" style="left: 0; top: 0">1</div>
+      <div id="arrastrarDos" class="red" style="left: 0; top: 0">2</div>
+      <div id="arrastrarTres" class="red" style="left: 0; top: 0">3</div>
+      <div id="arrastrarCuatro" class="red" style="left: 0; top: 0">4</div>
+      <div id="arrastrar2" class="blue" style="left: 0; top: 0">1</div>
+      <div id="arrastrarCinco" class="blue" style="left: 0; top: 0">2</div>
+      <div id="arrastrarSeis" class="blue" style="left: 0; top: 0">3</div>
+      <div id="arrastrarSiete" class="blue" style="left: 0; top: 0">4</div>
+      <div id="arrastrar3" class="green" style="left: 0; top: 0">1</div>
+      <div id="arrastrarOcho" class="green" style="left: 0; top: 0">2</div>
+      <div id="arrastrarNueve" class="green" style="left: 0; top: 0">3</div>
+      <div id="arrastrarDiez" class="green" style="left: 0; top: 0">4</div>
+      <div id="arrastrar4" class="yellow" style="left: 0; top: 0">1</div>
+      <div id="arrastrarOnce" class="yellow" style="left: 0; top: 0">2</div>
+      <div id="arrastrarDoce" class="yellow" style="left: 0; top: 0">3</div>
+      <div id="arrastrarTrece" class="yellow" style="left: 0; top: 0">4</div>
+    </div>
+  </section>
+
+  <!------------Seccion donde señalamos que hemos finalizado el juego ------------>
+
+  <section>
+    <div id="ganador">
+      <h2>Anuncia que ganaste</h2>
+      <p>Presiona el boton el jugador que logró llevar toda sus fichas a la meta</p>
+      <button class="gane btn btn-dark">GANÉ</button>
+    </div>
+
+    <div id="win">
+      <img class="win" src="../img/youwinn.png" alt="win">
+    </div>
+  </section>
+
+  <!---Seccion que muestra el footer------------------------->
+
+  <footer class="blockFooter row">
+
+    <div class="col-md-6">
+      <h4>Solo Juegos:</h4>
+      <p>Solo Juegos © Copyright 2021</p>
+    </div>
+    <div class="blockFooter_socialMedia col-md-6">
+      <h4>Follow us:</h4>
+      <button type="button" class="btn btn-light"><a href="https://twitter.com/"><img src="../img/twitter.png"
+            alt="twitter"></button>
+      <button type="button" class="btn btn-light"><a href="https://instagram.com/"><img src="../img/instagram.png"
+            alt="instagram"></button>
+      <button type="button" class="btn btn-light"><a href="https://www.twitch.tv/"><img src="../img/twich.png"
+            alt="twitch"></button>
+      <button type="button" class="btn btn-light"><a href="https://www.facebook.com/"><img src="../img/facebook.png"
+            alt="facebook"></button>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../js/juego.js"></script>
+
+</body>
+
+</html>
